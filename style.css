@@ -103,7 +103,6 @@ body {
 #effect {
     height: 100%;
     width: 100%;
-    position: relative;
     top: 0;
     left: 0;
 }
@@ -145,9 +144,8 @@ body {
     }
 }
 
-#container {
+/* .container {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.8);
     width: 100%;
     height: 100%;
     top: 50%;
@@ -161,6 +159,84 @@ body {
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
+} */
+.app-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    position: relative;
+}
+
+.link-container {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 8px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.link-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    border-bottom: 1px solid rgb(97 97 97);
+}
+
+.link-item:last-child {
+    border-bottom: none;
+}
+
+.link-item__text {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #444444;
+}
+
+.link-item__btn {
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: 300;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding: 4px 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link-item__btn:visited {
+    color: #333;
 }
 
 .img-box {
@@ -174,6 +250,11 @@ body {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
+}
+
+.content-box {
+    height: 300px;
+    max-height: 100%;
 }
 
 .avt {
@@ -215,7 +296,6 @@ body {
 
 .contact-list {
     display: flex;
-    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
