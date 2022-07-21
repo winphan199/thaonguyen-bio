@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Tan Thuan bio</title>
 </head>
 <body>
@@ -23,9 +24,7 @@
             <div class="container">
                 <div class="profile-container">
     
-                    <div class="img-box">
-                        <img src="./avt.jpg" alt="" class="avt">
-                    </div>
+                    <div class="img-box"></div>
                     <div class="content-box">
                         <h2 class="name">Thảo Nguyên</h2>
                         <p class="desc">Account Manager</p>
@@ -34,19 +33,62 @@
                         <p class="body mt-8">Thị trường Canada và Việt Nam</p>
                     </div>
         
-                    <div class="contact-list">
-                        <a href="tel:+84913451178" class="contact-item">
-                            <img class="social-img" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGNpcmNsZSBzdHlsZT0iZmlsbDojMjE5NkYzOyIgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjU2Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojRkFGQUZBOyIgZD0iTTM4NCwzMDguOTI4Yy0yNy42MTYsMC01My45NTItNi4wMTYtNzguMjQtMTcuODg4Yy0zLjgwOC0xLjgyNC04LjIyNC0yLjExMi0xMi4yNTYtMC43MzYNCgljLTQuMDMyLDEuNDA4LTcuMzI4LDQuMzUyLTkuMTg0LDguMTZsLTExLjUyLDIzLjg0Yy0zNC41Ni0xOS44NC02My4yMzItNDguNTQ0LTgzLjEwNC04My4xMDRsMjMuODcyLTExLjUyDQoJYzMuODQtMS44NTYsNi43NTItNS4xNTIsOC4xNi05LjE4NGMxLjM3Ni00LjAzMiwxLjEyLTguNDQ4LTAuNzM2LTEyLjI1NmMtMTEuOTA0LTI0LjI1Ni0xNy45Mi01MC41OTItMTcuOTItNzguMjQNCgljMC04LjgzMi03LjE2OC0xNi0xNi0xNkgxMjhjLTguODMyLDAtMTYsNy4xNjgtMTYsMTZjMCwxNDkuOTg0LDEyMi4wMTYsMjcyLDI3MiwyNzJjOC44MzIsMCwxNi03LjE2OCwxNi0xNnYtNTkuMDcyDQoJQzQwMCwzMTYuMDk2LDM5Mi44MzIsMzA4LjkyOCwzODQsMzA4LjkyOHoiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
-                        </a>
-                        <a href="https://www.facebook.com/thuan.tan.505960" target="_blank" class="contact-item">
-                            <img class="social-img" src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im01MTIgMjU2YzAgMTQxLjM4NjcxOS0xMTQuNjEzMjgxIDI1Ni0yNTYgMjU2cy0yNTYtMTE0LjYxMzI4MS0yNTYtMjU2IDExNC42MTMyODEtMjU2IDI1Ni0yNTYgMjU2IDExNC42MTMyODEgMjU2IDI1NnptMCAwIiBmaWxsPSIjNGE3YWZmIi8+PHBhdGggZD0ibTI2Ny4yMzQzNzUgNTExLjczODI4MWMxMzYuMTcxODc1LTUuODc4OTA2IDI0NC43NjU2MjUtMTE4LjEyMTA5MyAyNDQuNzY1NjI1LTI1NS43MzgyODEgMC0uOTk2MDk0LS4wMjczNDQtMS45ODgyODEtLjAzOTA2Mi0yLjk4NDM3NWwtMTc3LjY5OTIxOS0xNzcuNzAzMTI1LTE5MCAxOTguNTkzNzUgMTA1LjU2NjQwNiAxMDUuNTY2NDA2LTQ4LjY3NTc4MSA2Ni4xODM1OTR6bTAgMCIgZmlsbD0iIzAwNTNiZiIvPjxwYXRoIGQ9Im0zMzQuMjYxNzE5IDc1LjMxMjV2NTcuOTY4NzVzLTY2LjU1NDY4OC05LjY2MDE1Ni02Ni41NTQ2ODggMzMuMjc3MzQ0djQyLjkzNzVoNjAuMTEzMjgxbC03LjUxMTcxOCA2NS40ODA0NjhoLTUyLjYwMTU2M3YxNzAuNjc5Njg4aC02Ni41NTQ2ODd2LTE3MC42Nzk2ODhsLTU2Ljg5NDUzMi0xLjA3NDIxOHYtNjQuNDA2MjVoNTUuODIwMzEzdi00OS4zNzg5MDZzLTMuNjgzNTk0LTczLjQ1NzAzMiA2OC43MDMxMjUtODYuOTQ5MjE5YzMwLjA1ODU5NC01LjYwNTQ2OSA2NS40ODA0NjkgMi4xNDQ1MzEgNjUuNDgwNDY5IDIuMTQ0NTMxem0wIDAiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJtMzM0LjI2MTcxOSAxMzMuMjgxMjV2LTU3Ljk2ODc1cy0zNS40MjE4NzUtNy43NS02NS40ODA0NjktMi4xNDQ1MzFjLTQuNjk1MzEyLjg3NS05LjA2MjUgMi4wMDc4MTItMTMuMTM2NzE5IDMuMzQ3NjU2djM2OS4xNDA2MjVoMTIuMDYyNXYtMTcwLjY3OTY4OGg1Mi41OTc2NTdsNy41MTU2MjQtNjUuNDgwNDY4aC02MC4xMTMyODFzMCAwIDAtNDIuOTM3NSA2Ni41NTQ2ODgtMzMuMjc3MzQ0IDY2LjU1NDY4OC0zMy4yNzczNDR6bTAgMCIgZmlsbD0iI2RjZTFlYiIvPjwvc3ZnPg==" />
-                        </a>
-                        <a href="https://zalo.me/tanthuan0209" target="_blank" class="contact-item">
-                            <img class="social-img" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyLjAwNyA1MTIuMDA3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIuMDA3IDUxMi4wMDc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxjaXJjbGUgc3R5bGU9ImZpbGw6I0U2RUZGNDsiIGN4PSIyNTYuMDAzIiBjeT0iMjU2LjAwMyIgcj0iMjU2LjAwMyIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0I2RDFERDsiIGQ9Ik0zODUuNTgxLDEwNy4yNTZMMzg1LjU4MSwxMDcuMjU2Yy01LjEwMS01LjEwMi0xMi4xNDgtOC4yNTgtMTkuOTMyLTguMjU4SDE0Ni4zNTQNCgljLTE1LjU2NywwLTI4LjE4NywxMi42MTktMjguMTg3LDI4LjE4N3YyMTkuMjk1YzAsNy43ODUsMy4xNTYsMTQuODMyLDguMjU4LDE5LjkzM2wwLDBsMTQ1LjEwNSwxNDUuMTA1DQoJQzQwNS42ODIsNTAzLjQ4OSw1MTIuMDAxLDM5Mi4xNjksNTEyLjAwMSwyNTZjMC04LjA4Ni0wLjM5My0xNi4wODEtMS4xMjYtMjMuOTc2TDM4NS41ODEsMTA3LjI1NnoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiM0MUEwRDc7IiBkPSJNMzY1LjY0Nyw5OC45OTlIMTQ2LjM1M2MtMTUuNTY3LDAtMjguMTg3LDEyLjYxOS0yOC4xODcsMjguMTg3djIxOS4yOTQNCgljMCwxNS41NjcsMTIuNjE5LDI4LjE4NywyOC4xODcsMjguMTg3aDQzLjk3MXYzOC4zMzRsNTMuMzc3LTM4LjMzNGgxMjEuOTQ2YzE1LjU2NywwLDI4LjE4Ny0xMi42MTksMjguMTg3LTI4LjE4N1YxMjcuMTg1DQoJQzM5My44MzQsMTExLjYxOCwzODEuMjE1LDk4Ljk5OSwzNjUuNjQ3LDk4Ljk5OXoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMzkzLjgzNCwzNDAuOTQydi00NC4xN2MtNS43My01Ljg1LTEzLjcxNC05LjQ4NC0yMi41NS05LjQ4NGgtNjQuMTg4bDg2LjczOC0xMTguMTc1VjEzMS4yNA0KCWMtNC40NjYtMy45ODgtMTAuMzA0LTYuMzEtMTYuNS02LjMxaC0xMzEuMmMtMTcuNDM1LDAtMzEuNTcsMTQuMTM1LTMxLjU3LDMxLjU3czE0LjEzNSwzMS41NywzMS41NywzMS41N2g1NS4xNjhMMjEyLDMxMS4wODkNCgljLTUuNDc0LDcuNTM5LTYuMjU1LDE3LjUxMi0yLjAyNCwyNS44MTJjNC4yMzEsOC4zLDEyLjc2LDEzLjUyNiwyMi4wNzcsMTMuNTI2aDEzOS4yMzINCglDMzgwLjEyMSwzNTAuNDI2LDM4OC4xMDQsMzQ2Ljc5MiwzOTMuODM0LDM0MC45NDJ6Ii8+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg=="/>
-                        </a>
-                        <a href="https://3.0.148.2.nip.io/vcard/thao-nguyen" target="" class="contact-item">
-                            <img class="social-img" src="./contact-book.png"/>
-                        </a>
+                    <div class="contact-list-layer">
+                        <div class="left-btn">
+                            <div class="left-icon">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-list">
+                            <a href="tel:+84913451178" class="contact-item">
+                                <img class="social-img" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGNpcmNsZSBzdHlsZT0iZmlsbDojMjE5NkYzOyIgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjU2Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojRkFGQUZBOyIgZD0iTTM4NCwzMDguOTI4Yy0yNy42MTYsMC01My45NTItNi4wMTYtNzguMjQtMTcuODg4Yy0zLjgwOC0xLjgyNC04LjIyNC0yLjExMi0xMi4yNTYtMC43MzYNCgljLTQuMDMyLDEuNDA4LTcuMzI4LDQuMzUyLTkuMTg0LDguMTZsLTExLjUyLDIzLjg0Yy0zNC41Ni0xOS44NC02My4yMzItNDguNTQ0LTgzLjEwNC04My4xMDRsMjMuODcyLTExLjUyDQoJYzMuODQtMS44NTYsNi43NTItNS4xNTIsOC4xNi05LjE4NGMxLjM3Ni00LjAzMiwxLjEyLTguNDQ4LTAuNzM2LTEyLjI1NmMtMTEuOTA0LTI0LjI1Ni0xNy45Mi01MC41OTItMTcuOTItNzguMjQNCgljMC04LjgzMi03LjE2OC0xNi0xNi0xNkgxMjhjLTguODMyLDAtMTYsNy4xNjgtMTYsMTZjMCwxNDkuOTg0LDEyMi4wMTYsMjcyLDI3MiwyNzJjOC44MzIsMCwxNi03LjE2OCwxNi0xNnYtNTkuMDcyDQoJQzQwMCwzMTYuMDk2LDM5Mi44MzIsMzA4LjkyOCwzODQsMzA4LjkyOHoiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+                            </a>
+                            <a href="https://www.facebook.com/thuan.tan.505960" target="_blank" class="contact-item">
+                                <img class="social-img" src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im01MTIgMjU2YzAgMTQxLjM4NjcxOS0xMTQuNjEzMjgxIDI1Ni0yNTYgMjU2cy0yNTYtMTE0LjYxMzI4MS0yNTYtMjU2IDExNC42MTMyODEtMjU2IDI1Ni0yNTYgMjU2IDExNC42MTMyODEgMjU2IDI1NnptMCAwIiBmaWxsPSIjNGE3YWZmIi8+PHBhdGggZD0ibTI2Ny4yMzQzNzUgNTExLjczODI4MWMxMzYuMTcxODc1LTUuODc4OTA2IDI0NC43NjU2MjUtMTE4LjEyMTA5MyAyNDQuNzY1NjI1LTI1NS43MzgyODEgMC0uOTk2MDk0LS4wMjczNDQtMS45ODgyODEtLjAzOTA2Mi0yLjk4NDM3NWwtMTc3LjY5OTIxOS0xNzcuNzAzMTI1LTE5MCAxOTguNTkzNzUgMTA1LjU2NjQwNiAxMDUuNTY2NDA2LTQ4LjY3NTc4MSA2Ni4xODM1OTR6bTAgMCIgZmlsbD0iIzAwNTNiZiIvPjxwYXRoIGQ9Im0zMzQuMjYxNzE5IDc1LjMxMjV2NTcuOTY4NzVzLTY2LjU1NDY4OC05LjY2MDE1Ni02Ni41NTQ2ODggMzMuMjc3MzQ0djQyLjkzNzVoNjAuMTEzMjgxbC03LjUxMTcxOCA2NS40ODA0NjhoLTUyLjYwMTU2M3YxNzAuNjc5Njg4aC02Ni41NTQ2ODd2LTE3MC42Nzk2ODhsLTU2Ljg5NDUzMi0xLjA3NDIxOHYtNjQuNDA2MjVoNTUuODIwMzEzdi00OS4zNzg5MDZzLTMuNjgzNTk0LTczLjQ1NzAzMiA2OC43MDMxMjUtODYuOTQ5MjE5YzMwLjA1ODU5NC01LjYwNTQ2OSA2NS40ODA0NjkgMi4xNDQ1MzEgNjUuNDgwNDY5IDIuMTQ0NTMxem0wIDAiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJtMzM0LjI2MTcxOSAxMzMuMjgxMjV2LTU3Ljk2ODc1cy0zNS40MjE4NzUtNy43NS02NS40ODA0NjktMi4xNDQ1MzFjLTQuNjk1MzEyLjg3NS05LjA2MjUgMi4wMDc4MTItMTMuMTM2NzE5IDMuMzQ3NjU2djM2OS4xNDA2MjVoMTIuMDYyNXYtMTcwLjY3OTY4OGg1Mi41OTc2NTdsNy41MTU2MjQtNjUuNDgwNDY4aC02MC4xMTMyODFzMCAwIDAtNDIuOTM3NSA2Ni41NTQ2ODgtMzMuMjc3MzQ0IDY2LjU1NDY4OC0zMy4yNzczNDR6bTAgMCIgZmlsbD0iI2RjZTFlYiIvPjwvc3ZnPg==" />
+                            </a>
+                            <a href="https://zalo.me/tanthuan0209" target="_blank" class="contact-item">
+                                <img class="social-img" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyLjAwNyA1MTIuMDA3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIuMDA3IDUxMi4wMDc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxjaXJjbGUgc3R5bGU9ImZpbGw6I0U2RUZGNDsiIGN4PSIyNTYuMDAzIiBjeT0iMjU2LjAwMyIgcj0iMjU2LjAwMyIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0I2RDFERDsiIGQ9Ik0zODUuNTgxLDEwNy4yNTZMMzg1LjU4MSwxMDcuMjU2Yy01LjEwMS01LjEwMi0xMi4xNDgtOC4yNTgtMTkuOTMyLTguMjU4SDE0Ni4zNTQNCgljLTE1LjU2NywwLTI4LjE4NywxMi42MTktMjguMTg3LDI4LjE4N3YyMTkuMjk1YzAsNy43ODUsMy4xNTYsMTQuODMyLDguMjU4LDE5LjkzM2wwLDBsMTQ1LjEwNSwxNDUuMTA1DQoJQzQwNS42ODIsNTAzLjQ4OSw1MTIuMDAxLDM5Mi4xNjksNTEyLjAwMSwyNTZjMC04LjA4Ni0wLjM5My0xNi4wODEtMS4xMjYtMjMuOTc2TDM4NS41ODEsMTA3LjI1NnoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiM0MUEwRDc7IiBkPSJNMzY1LjY0Nyw5OC45OTlIMTQ2LjM1M2MtMTUuNTY3LDAtMjguMTg3LDEyLjYxOS0yOC4xODcsMjguMTg3djIxOS4yOTQNCgljMCwxNS41NjcsMTIuNjE5LDI4LjE4NywyOC4xODcsMjguMTg3aDQzLjk3MXYzOC4zMzRsNTMuMzc3LTM4LjMzNGgxMjEuOTQ2YzE1LjU2NywwLDI4LjE4Ny0xMi42MTksMjguMTg3LTI4LjE4N1YxMjcuMTg1DQoJQzM5My44MzQsMTExLjYxOCwzODEuMjE1LDk4Ljk5OSwzNjUuNjQ3LDk4Ljk5OXoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMzkzLjgzNCwzNDAuOTQydi00NC4xN2MtNS43My01Ljg1LTEzLjcxNC05LjQ4NC0yMi41NS05LjQ4NGgtNjQuMTg4bDg2LjczOC0xMTguMTc1VjEzMS4yNA0KCWMtNC40NjYtMy45ODgtMTAuMzA0LTYuMzEtMTYuNS02LjMxaC0xMzEuMmMtMTcuNDM1LDAtMzEuNTcsMTQuMTM1LTMxLjU3LDMxLjU3czE0LjEzNSwzMS41NywzMS41NywzMS41N2g1NS4xNjhMMjEyLDMxMS4wODkNCgljLTUuNDc0LDcuNTM5LTYuMjU1LDE3LjUxMi0yLjAyNCwyNS44MTJjNC4yMzEsOC4zLDEyLjc2LDEzLjUyNiwyMi4wNzcsMTMuNTI2aDEzOS4yMzINCglDMzgwLjEyMSwzNTAuNDI2LDM4OC4xMDQsMzQ2Ljc5MiwzOTMuODM0LDM0MC45NDJ6Ii8+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg=="/>
+                            </a>
+                            <a href="https://3.0.148.2.nip.io/vcard/thao-nguyen" target="" class="contact-item">
+                                <img class="social-img" src="./contact-book.png"/>
+                            </a>
+                            <a href="https://3.0.148.2.nip.io/vcard/thao-nguyen" target="" class="contact-item">
+                                <img class="social-img" src="./contact-book.png"/>
+                            </a>
+                            <a href="https://3.0.148.2.nip.io/vcard/thao-nguyen" target="" class="contact-item">
+                                <img class="social-img" src="./contact-book.png"/>
+                            </a>
+                            <a href="https://3.0.148.2.nip.io/vcard/thao-nguyen" target="" class="contact-item">
+                                <img class="social-img" src="./contact-book.png"/>
+                            </a>
+                            <a href="https://3.0.148.2.nip.io/vcard/thao-nguyen" target="" class="contact-item">
+                                <img class="social-img" src="./contact-book.png"/>
+                            </a>
+                            <a href="https://3.0.148.2.nip.io/vcard/thao-nguyen" target="" class="contact-item">
+                                <img class="social-img" src="./contact-book.png"/>
+                            </a>
+                            <a href="https://3.0.148.2.nip.io/vcard/thao-nguyen" target="" class="contact-item">
+                                <img class="social-img" src="./contact-book.png"/>
+                            </a>
+                            <a href="https://3.0.148.2.nip.io/vcard/thao-nguyen" target="" class="contact-item">
+                                <img class="social-img" src="./contact-book.png"/>
+                            </a>
+                            <a href="https://3.0.148.2.nip.io/vcard/thao-nguyen" target="" class="contact-item">
+                                <img class="social-img" src="./contact-book.png"/>
+                            </a>
+                            <a href="https://3.0.148.2.nip.io/vcard/thao-nguyen" target="" class="contact-item">
+                                <img class="social-img" src="./contact-book.png"/>
+                            </a>
+                            <a href="tel:+84913451178" class="contact-item">
+                                <img class="social-img" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGNpcmNsZSBzdHlsZT0iZmlsbDojMjE5NkYzOyIgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjU2Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojRkFGQUZBOyIgZD0iTTM4NCwzMDguOTI4Yy0yNy42MTYsMC01My45NTItNi4wMTYtNzguMjQtMTcuODg4Yy0zLjgwOC0xLjgyNC04LjIyNC0yLjExMi0xMi4yNTYtMC43MzYNCgljLTQuMDMyLDEuNDA4LTcuMzI4LDQuMzUyLTkuMTg0LDguMTZsLTExLjUyLDIzLjg0Yy0zNC41Ni0xOS44NC02My4yMzItNDguNTQ0LTgzLjEwNC04My4xMDRsMjMuODcyLTExLjUyDQoJYzMuODQtMS44NTYsNi43NTItNS4xNTIsOC4xNi05LjE4NGMxLjM3Ni00LjAzMiwxLjEyLTguNDQ4LTAuNzM2LTEyLjI1NmMtMTEuOTA0LTI0LjI1Ni0xNy45Mi01MC41OTItMTcuOTItNzguMjQNCgljMC04LjgzMi03LjE2OC0xNi0xNi0xNkgxMjhjLTguODMyLDAtMTYsNy4xNjgtMTYsMTZjMCwxNDkuOTg0LDEyMi4wMTYsMjcyLDI3MiwyNzJjOC44MzIsMCwxNi03LjE2OCwxNi0xNnYtNTkuMDcyDQoJQzQwMCwzMTYuMDk2LDM5Mi44MzIsMzA4LjkyOCwzODQsMzA4LjkyOHoiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+                            </a>    
+                        </div>
+                        <div class="right-btn">
+                            <div class="right-icon">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="link-container">
@@ -63,11 +105,13 @@
         </div>
     <div class="intro">
         <h1 class="intro-text">
-            <span>Dịch vụ vận tải</span>
+            <span>IDBeauty</span>
         </h1>
         <h1 class="intro-text">
-            <span>THUẬN LONG</span>
+            <span>THẢO NGUYÊN</span>
         </h1>
     </div>
+
+    <script src="./style.js"></script>
 </body>
 </html>

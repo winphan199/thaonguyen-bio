@@ -7,6 +7,7 @@
 
 :root {
     --text-white: #fff;
+    --slider-with: calc(66px * 4 + 5px * 2);
 }
 
 html {
@@ -240,6 +241,18 @@ body {
 }
 
 .img-box {
+    /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
+    background-image: url('./avt.jpg');
+
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+
+    /* center the image vertically and horizontally */
+    background-position: center 15%;
+
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;
+
     position: absolute;
     height: 120px;
     width: 120px;
@@ -294,12 +307,99 @@ body {
     text-align: center;
 }
 
+.contact-list-layer {
+    width: var(--slider-with);
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.left-btn, .right-btn {
+    position: relative;
+}
+
+.left-icon, .right-icon {
+}
+
+.left-btn {
+    visibility: hidden;
+    animation: moveLeftMost 0.8s ease 0s infinite;
+    -webkit-animation: moveLeftMost 0.8s ease 0s infinite;
+}
+
+.left-icon {
+}
+
+.right-btn {
+    animation: moveRightMost 0.8s ease 0s infinite;
+    -webkit-animation: moveRightMost 0.8s ease 0s infinite;
+}
+
+.right-icon {
+}
+
+@keyframes moveRightMost {
+    0% {
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(5px);
+        -webkit-transform: translateX(5px);
+        -moz-transform: translateX(5px);
+        -ms-transform: translateX(5px);
+        -o-transform: translateX(5px);
+}
+    100% {
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+    }
+}
+
+@keyframes moveLeftMost {
+    0% {
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-5px);
+        -webkit-transform: translateX(-5px);
+        -moz-transform: translateX(-5px);
+        -ms-transform: translateX(-5px);
+        -o-transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+    }
+}
+
 .contact-list {
     display: flex;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    position: relative;
+    width: 100%;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.contact-list::-webkit-scrollbar {
+    display: none;
 }
 
 .contact-item {
@@ -308,6 +408,10 @@ body {
 
 .contact-item:hover {
     opacity: 0.6;
+}
+
+.back-btn {
+    position: absolute;
 }
 
 .social-img {
