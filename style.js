@@ -9,41 +9,7 @@ scrollContainer.addEventListener("wheel", (evt) => {
     else {
         scrollContainer.scrollLeft -= scrollContainer.offsetWidth;
     }
-
-    // get left right icon
-    const leftIcon = document.querySelector('.left-btn');
-    const rightIcon = document.querySelector('.right-btn');
-    if (scrollContainer.scrollLeft <= 0) {
-        hideIcon(leftIcon);
-        showIcon(rightIcon);
-    } else if (scrollContainer.scrollLeft > 0 && scrollContainer.scrollLeft < scrollContainer.scrollWidth - scrollContainer.offsetWidth) {
-        showIcon(leftIcon);
-        showIcon(rightIcon);
-    } else if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.offsetWidth) {
-        showIcon(leftIcon);
-        hideIcon(rightIcon);
-    }
 });
-
-scrollContainer.addEventListener("touchmove", (evt) => {
-
-    // get left right icon
-    const leftIcon = document.querySelector('.left-btn');
-    const rightIcon = document.querySelector('.right-btn');
-    if (scrollContainer.scrollLeft <= 0) {
-        hideIcon(leftIcon);
-        showIcon(rightIcon);
-    } else if (scrollContainer.scrollLeft > 0 && scrollContainer.scrollLeft < scrollContainer.scrollWidth - scrollContainer.offsetWidth) {
-        showIcon(leftIcon);
-        showIcon(rightIcon);
-    } else if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.offsetWidth) {
-        showIcon(leftIcon);
-        hideIcon(rightIcon);
-    }
-});
-
-
-
 
 function hideIcon(selector) {
     selector.style.visibility = 'hidden';
@@ -52,4 +18,38 @@ function hideIcon(selector) {
 function showIcon(selector) {
     selector.style.visibility = 'visible';
 }
+
+// fixbug mouse wheel k lay dc do dai
+const observer = new IntersectionObserver(entries => {
+    // get left right icon
+    const leftIcon = document.querySelector('.left-btn');
+    const rightIcon = document.querySelector('.right-btn');
+    entries.forEach(entry => {
+
+        if (entry.target == first) {
+
+            if (entry.isIntersecting) {
+                hideIcon(leftIcon);
+            }
+            else {
+                showIcon(leftIcon)
+            }
+        } else if (entry.target == last) {
+            if (entry.isIntersecting) {
+                hideIcon(rightIcon);
+            }
+            else {
+                showIcon(rightIcon)
+            }
+        }
+    })
+}, {
+    threshold: 1
+})
+
+const first = document.querySelector('.contact-list > .contact-item:first-child');
+const last = document.querySelector('.contact-list > .contact-item:last-child');
+
+observer.observe(first);
+observer.observe(last);
 

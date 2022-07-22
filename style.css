@@ -391,6 +391,7 @@ body {
     display: flex;
     align-items: center;
     overflow-x: scroll;
+    scroll-behavior: smooth;
     position: relative;
     width: 100%;
     -ms-overflow-style: none;  /* IE and Edge */
@@ -403,7 +404,7 @@ body {
 }
 
 .contact-item {
-    padding: 16px;
+    margin: 16px;
 }
 
 .contact-item:hover {
