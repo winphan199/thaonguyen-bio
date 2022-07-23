@@ -404,7 +404,7 @@ body {
 }
 
 .contact-item {
-    margin: 16px;
+    padding: 16px;
 }
 
 .contact-item:hover {
