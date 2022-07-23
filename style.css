@@ -391,7 +391,7 @@ body {
     display: flex;
     align-items: center;
     overflow-x: scroll;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     position: relative;
     width: 100%;
     -ms-overflow-style: none;  /* IE and Edge */

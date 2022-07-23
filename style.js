@@ -2,13 +2,15 @@ const scrollContainer = document.querySelector(".contact-list");
 
 scrollContainer.addEventListener("wheel", (evt) => {
     evt.preventDefault();
-    if (evt.deltaY >= 0) {
+    // if (evt.deltaY >= 0) {
 
-        scrollContainer.scrollLeft += scrollContainer.offsetWidth;
-    }
-    else {
-        scrollContainer.scrollLeft -= scrollContainer.offsetWidth;
-    }
+    //     scrollContainer.scrollLeft += scrollContainer.offsetWidth;
+    // }
+    // else {
+    //     scrollContainer.scrollLeft -= scrollContainer.offsetWidth;
+    // }
+    scrollContainer.scrollLeft -= evt.deltaY;
+
 });
 
 function hideIcon(selector) {
